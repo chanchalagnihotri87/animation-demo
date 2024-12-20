@@ -1,0 +1,89 @@
+<div class="card">
+  <!-- Card Header -->
+  <div class="card-header bg-purple">
+    <h4 class="my-0 py-0">Focus</h4>
+  </div>
+
+  <!-- Card Body -->
+  <div class="card-body py-0" style="min-height: 150px">
+    <div style="min-height: 150px; position: relative">
+      <img
+        *ngIf="showImages"
+        src="/img/complete-star-spin.gif"
+        width="100px"
+        [@flow-out-left]
+        (@flow-out-left.done)="hideImages()"
+        style="position: absolute; bottom: 0; left: 120px"
+      />
+
+      <img
+        *ngIf="showImages"
+        src="/img/complete-star-spin.gif"
+        width="100px"
+        [@flow-out-left-middle]
+        (@flow-out-left-middle.done)="hideImages()"
+        style="position: absolute; bottom: 0; left: 120px"
+      />
+
+      <img
+        *ngIf="showImages"
+        src="/img/complete-star-spin.gif"
+        width="100px"
+        [@flow-out-right]
+        (@flow-out-right.done)="hideImages()"
+        style="position: absolute; bottom: 0; left: 120px"
+      />
+
+      <img
+        *ngIf="showImages"
+        src="/img/complete-star-spin.gif"
+        width="100px"
+        [@flow-out-right-middle]
+        (@flow-out-right-middle.done)="hideImages()"
+        style="position: absolute; bottom: 0; left: 120px"
+      />
+
+      <img
+        *ngIf="showImages"
+        src="/img/complete-star-spin.gif"
+        width="100px"
+        [@flow-out-top-middle]
+        (@flow-out-top-middle.done)="hideImages()"
+        style="position: absolute; bottom: 0; left: 120px"
+      />
+
+      <img
+        *ngIf="showMiddleStar"
+        [@flow-out-top-left]
+        (@flow-out-top-left.done)="hideMiddleStar()"
+        src="/img/complete-star.png"
+        width="50px"
+        style="position: absolute; bottom: 10px; left: 153px"
+      />
+      <img
+        *ngIf="!showImages && !showMiddleStar"
+        src="/img/complete-star.png"
+        width="50px"
+        style="position: absolute; top: -88px; left: -12px"
+      />
+      <h1
+        *ngIf="!showImages && !showMiddleStar"
+        class="text-warning"
+        style="position: absolute; top: 44px; left: 68px"
+        [@zoomInMessage]
+        (@zoomInMessage.done)="moveNext()"
+      >
+        Goal Achieved
+      </h1>
+    </div>
+  </div>
+  <div
+    class="card-footer text-body-secondary bg-light-purple fw-bold text-start"
+  >
+    <div class="row mb-3">
+      <div class="col-12">
+        Adeeb will maintain focus during lengthy lectures and discussions
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div [@mediumZoomInAnimation]>
+  <div class="card">
+    <div class="card-header bg-primary text-center text-white">
+      <h3>Congratulations! End now?</h3>
+    </div>
+    <div class="card-body bg-creamy fs-4 fw-semibold">
+      Congrats - your student has met the Proficiency Threshold for the current
+      observation! Would like to end the observation now? This will secure the
+      successful observation. If not, you can keep logging data for the current
+      observation.
+    </div>
+    <div class="card-footer bg-creamy border-1 border-top">
+      <div class="row text-center">
+        <div class="col-6">
+          <button
+            type="button"
+            class="btn btn-outline-primary fw-semibold"
+            (click)="movePrevious()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-box-arrow-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"
+              />
+              <path
+                fill-rule="evenodd"
+                d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"
+              />
+            </svg>
+            Keep logging
+          </button>
+        </div>
+        <div class="col-6">
+          <button
+            type="button"
+            class="btn btn-primary fw-semibold"
+            (click)="moveNext()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-stop-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="M5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5z"
+              />
+            </svg>
+            End Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

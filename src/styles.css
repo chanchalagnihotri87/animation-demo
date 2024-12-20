@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-light-green {
+  background-color: #00d9b5;
+}
+
+.bg-lighter-green {
+  background-color: #99ffee;
+}
+
+.bg-purple {
+  background-color: #aa01ff;
+}
+
+.bg-light-purple {
+  background-color: #eeccff;
+}
+
+.text-purple {
+  color: #aa01ff;
+}
+
+.bg-creamy {
+  background-color: #f7e5ff;
+}
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.btn.bg-lighter-green:hover {
+  background-color: #99ffee;
+  border: 1px #00d9b5 solid;
+}
