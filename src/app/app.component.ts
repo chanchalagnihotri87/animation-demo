@@ -38,7 +38,7 @@ import { Step8Component } from './components/step-8/step-8.component';
 })
 export class AppComponent {
   title = 'Animation-Demo';
-  step = 7;
+  step = 1;
 
   footerVisible = false;
 
