@@ -8,7 +8,7 @@ import { mediumZoomInAnimation } from '../../animations/mediumZoomInAnimation';
   templateUrl: './step-8.component.html',
   animations: [mediumZoomInAnimation],
 })
-export class Step7Component {
+export class Step8Component {
   onMoveToStart = output();
 
   moveToStart() {

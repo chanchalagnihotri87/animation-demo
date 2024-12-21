@@ -1,0 +1,26 @@
+.moving-star {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+}
+
+.moving-top-left-star {
+  width: 50px;
+  position: absolute;
+  bottom: 10px;
+  left: 153px;
+}
+
+.top-left-star {
+  width: 50px;
+  position: absolute;
+  top: -88px;
+  left: -12px;
+}
+
+.achieved-message {
+  position: absolute;
+  top: 44px;
+  left: 68px;
+}

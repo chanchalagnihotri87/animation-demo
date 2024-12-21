@@ -12,8 +12,8 @@ import { Step4Component } from './components/step-4/step-4.component';
 import { Step5BottomSectionComponent } from './components/step-5-bottom-section/step-5-bottom-section.component';
 import { Step5Component } from './components/step-5/step-5.component';
 import { Step6Component } from './components/step-6/step-6.component';
-import { Step8Component } from './components/step-7/step-7.component';
-import { Step7Component } from './components/step-8/step-8.component';
+import { Step7Component } from './components/step-7/step-7.component';
+import { Step8Component } from './components/step-8/step-8.component';
 
 @Component({
   selector: 'app-root',
@@ -37,8 +37,8 @@ import { Step7Component } from './components/step-8/step-8.component';
   animations: [zoomInAnimation, mediumZoomInAnimation, pendulumAnimation],
 })
 export class AppComponent {
-  title = 'animation-poc';
-  step = 1;
+  title = 'Animation-Demo';
+  step = 7;
 
   footerVisible = false;
 
